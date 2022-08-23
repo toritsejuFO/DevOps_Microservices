@@ -3,10 +3,15 @@
 ## Complete the following steps to get Docker running locally
 
 # Step 1:
-# Build image and add a descriptive tag
+docker build -t ml_predict:latest .
 
 # Step 2: 
-# List docker images
+docker images
+
+# In-between steps
+## Delete dangling images if any
+docker rmi $(docker images -a -q -f dangling=true)
+docker images
 
 # Step 3: 
-# Run flask app
+docker run -it --rm --name ml_predict -p 8000:80 ml_predict
