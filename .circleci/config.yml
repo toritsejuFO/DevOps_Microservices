@@ -10,13 +10,14 @@ jobs:
         # Use the same Docker base as the project
             - image: python:3.7.3-stretch
 
-        # working_directory: ~/repo
+        working_directory: ~/repo
 
         steps:
             - checkout
-            
-            - run: pwd
-            - run: ls ${pwd}
+
+            - run:
+                name: Enter sub project directory
+                command: cd ~/repo/project-ml-microservice-kubernetes
 
             # Download and cache dependencies
             - restore_cache:
