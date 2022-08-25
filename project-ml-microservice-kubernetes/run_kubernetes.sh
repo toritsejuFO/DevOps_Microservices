@@ -16,4 +16,4 @@ minikube kubectl -- get pods
 
 # Step 4:
 # Forward the container port to a host
-minikube kubectl -- port-forward pods/k8s-ml-predict-7dc685d8cc-bldhs --address 0.0.0.0 8000:80
+minikube kubectl -- port-forward pods/k8s-ml-predict-7cccf7fccf-29594 --address 0.0.0.0 8000:80
