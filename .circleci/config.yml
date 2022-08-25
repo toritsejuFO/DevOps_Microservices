@@ -14,6 +14,8 @@ jobs:
 
         steps:
             - checkout
+            
+            - run: pwd 
 
             # Download and cache dependencies
             - restore_cache:
