@@ -1,1 +1,5 @@
-<paste log output from Kubernetes-mediated prediction, here>
+NAME                              READY   STATUS    RESTARTS   AGE
+k8s-ml-predict-7dc685d8cc-bldhs   1/1     Running   0          9m30s
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
