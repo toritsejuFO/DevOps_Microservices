@@ -17,7 +17,7 @@ jobs:
 
             - run:
                 name: Enter sub project directory
-                command: cd ~/repo/project-ml-microservice-kubernetes
+                command: cd project-ml-microservice-kubernetes
 
             # Download and cache dependencies
             - restore_cache:
